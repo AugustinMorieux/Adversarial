@@ -65,7 +65,6 @@ tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution 
 ```
 Setting the TF_FORCE_GPU_ALLOW_GROWTH environment variable to true seems to help in such cases. This could also be due to an incorrect version of libcudnn. Double check your versions with the TensorFlow 1.15 documentation.
 
-
 ## Getting the pre-trained model
 If you want to use the pre-trained English model for performing speech-to-text, you can download it (along with other important inference material) from the DeepSpeech releases page. Alternatively, you can run the following command to download and unzip the model files in your current directory:
 ```
