@@ -13,13 +13,6 @@ You can install Git LFS using a package manager:
 * To use Homebrew, run `brew install git-lfs`.
 * To use MacPorts, run `port install git-lfs`.
 
-
-## Getting the training code
-Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
-```
-git clone https://github.com/mozilla/DeepSpeech
-```
-
 ## Creating a virtual environment
 In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run deepspeech. You can use whatever directory you want. For the purpose of the documentation, we will rely on $HOME/tmp/deepspeech-train-venv. You can create it using this command:
 
@@ -36,6 +29,11 @@ virtualenv -p python3 $HOME/tmp/deepspeech-train-venv/
 Each time you need to work with DeepSpeech, you have to activate this virtual environment. This is done with this simple command:
 ``` 
 source $HOME/tmp/deepspeech-train-venv/bin/activate
+```
+## Getting the training code
+Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
+```
+git clone https://github.com/mozilla/DeepSpeech
 ```
 ## Installing Python dependencies
 Install the required dependencies using pip3:
