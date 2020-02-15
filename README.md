@@ -36,16 +36,16 @@ Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
 ```
 git clone https://github.com/mozilla/DeepSpeech
 ```
-> Checkout the correct version of the code:
+Checkout the correct version of the code:
 ```
 cd DeepSpeech
 git checkout tags/v0.4.1
-
-2c. If you get an error with tflite_convert, comment out DeepSpeech.py Line 21
-# from tensorflow.contrib.lite.python import tflite_convert
+```
+> If you get an error with tflite_convert, comment out DeepSpeech.py Line 21
+`# from tensorflow.contrib.lite.python import tflite_convert`
 ## Installing Python dependencies
 Install the required dependencies using pip3:
-```
+
 cd DeepSpeech
 pip3 install -r requirements.txt
 ```
