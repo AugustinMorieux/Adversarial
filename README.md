@@ -14,7 +14,7 @@ You can install Git LFS using a package manager:
 * To use MacPorts, run `port install git-lfs`.
 
 ## Creating a virtual environment
-In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run deepspeech. You can use whatever directory you want. For the purpose of the documentation, we will rely on `$HOME/tmp/deepspeech-train-venv. You can create it using this command:
+In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run deepspeech. You can use whatever directory you want. For the purpose of the documentation, we will rely on `$HOME/tmp/deepspeech-train-venv`. You can create it using this command:
 
 ```
 pip install virtualenv
