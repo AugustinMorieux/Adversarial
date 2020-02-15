@@ -39,6 +39,29 @@ Each time you need to work with DeepSpeech, you have to activate this virtual en
 ``` 
 source $HOME/tmp/deepspeech-train-venv/bin/activate
 ```
+## Installing DeepSpeech Python bindings
+
+Once your environment has been set-up and loaded, you can use pip3 to manage packages locally. On a fresh setup of the virtualenv, you will have to install the DeepSpeech wheel. You can check if deepspeech is already installed with pip3 list.
+
+To perform the installation, just use pip3 as such:
+```
+pip3 install deepspeech
+```
+If deepspeech is already installed, you can update it as such:
+```
+pip3 install --upgrade deepspeech
+```
+Alternatively, if you have a supported NVIDIA GPU on Linux, you can install the GPU specific package as follows:
+```
+pip3 install deepspeech-gpu
+```
+See the release notes to find which GPUs are supported. Please ensure you have the required CUDA dependency.
+You can update deepspeech-gpu as follows:
+```
+pip3 install --upgrade deepspeech-gpu
+```
+In both cases, pip3 should take care of installing all the required dependencies. After installation has finished, you should be able to call deepspeech from the command-line.
+
 ## Getting the training code
 Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
 ```
