@@ -115,7 +115,16 @@ tar -xzf deepspeech-0.4.1-checkpoint.tar.gz
 git clone https://github.com/carlini/audio_adversarial_examples.git
 ```
 
+# Download example audio files
+```
+curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz
+tar xvf audio-0.6.1.tar.gz
+```
 
+# Transcribe an audio file
+```
+deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --scorer deepspeech-0.6.1-models/kenlm.scorer --audio audio/2830-3980-0043.wav
+```
 ## Check that you can classify normal audio files correctly 
 ```
 python3 classify.py --in sample-000000.wav --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
