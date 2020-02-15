@@ -103,11 +103,16 @@ tensorflow.python.framework.errors_impl.UnknownError: Failed to get convolution 
 ```
 Setting the TF_FORCE_GPU_ALLOW_GROWTH environment variable to true seems to help in such cases. This could also be due to an incorrect version of libcudnn. Double check your versions with the TensorFlow 1.15 documentation.
 
-## Getting the pre-trained model
+## Getting pre-trained models
 If you want to use the pre-trained English model for performing speech-to-text, you can download it (along with other important inference material) from the DeepSpeech releases page. Alternatively, you can run the following command to download and unzip the model files in your current directory:
 ```
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.4.1/deepspeech-0.4.1-checkpoint.tar.gz
 tar -xzf deepspeech-0.4.1-checkpoint.tar.gz
+```
+
+```
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz
+tar xvfz deepspeech-0.6.1-models.tar.gz
 ```
 
 ## Getting the audio adversarial Attack
@@ -115,13 +120,13 @@ tar -xzf deepspeech-0.4.1-checkpoint.tar.gz
 git clone https://github.com/carlini/audio_adversarial_examples.git
 ```
 
-# Download example audio files
+## Download example audio files
 ```
 curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/audio-0.6.1.tar.gz
 tar xvf audio-0.6.1.tar.gz
 ```
 
-# Transcribe an audio file
+## Transcribe an audio file
 ```
 deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --scorer deepspeech-0.6.1-models/kenlm.scorer --audio audio/2830-3980-0043.wav
 ```
