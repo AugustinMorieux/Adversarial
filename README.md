@@ -180,4 +180,8 @@ or
 sudo easy_install numpy
 ```
 
+with tensirflow, try:
+```
+pip install tensorflow
+
 
