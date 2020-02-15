@@ -14,7 +14,8 @@ You can install Git LFS using a package manager:
 * To use Homebrew, run `brew install git-lfs`.
 * To use MacPorts, run `port install git-lfs`.
 
-## Installing Pipenv <https://docs.python-guide.org/dev/virtualenvs/>
+## Installing Pipenv 
+<https://docs.python-guide.org/dev/virtualenvs/>
 Pipenv is a dependency manager for Python projects. If you’re familiar with Node.js’ npm or Ruby’s bundler, it is similar in spirit to those tools. While pip can install Python packages, Pipenv is recommended as it’s a higher-level tool that simplifies dependency management for common use cases.
 Use pip to install Pipenv:
 ```
