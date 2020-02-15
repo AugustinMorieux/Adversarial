@@ -45,7 +45,7 @@ git checkout tags/v0.4.1
 `# from tensorflow.contrib.lite.python import tflite_convert`
 ## Installing Python dependencies
 Install the required dependencies using pip3:
-
+```
 cd DeepSpeech
 pip3 install -r requirements.txt
 ```
