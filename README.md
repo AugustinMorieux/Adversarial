@@ -175,4 +175,9 @@ with numpy, try:
 ```
 pip install --upgrade --ignore-installed --install-option '--install-data=/usr/local' numpy
 ```
+or
+```
+sudo easy_install numpy
+```
+
 
