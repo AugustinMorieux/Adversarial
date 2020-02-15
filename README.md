@@ -183,5 +183,13 @@ sudo easy_install numpy
 with tensirflow, try:
 ```
 pip install tensorflow
+```
+
+with progressbar, try:
+```
+pip install progressbar2
+```
+
+
 
 
