@@ -64,7 +64,7 @@ In both cases, pip3 should take care of installing all the required dependencies
 ## Getting the training code
 Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
 ```
-git clone https://github.com/mozilla/DeepSpeech
+git clone https://github.com/mozilla/DeepSpeech.git
 ```
 Checkout the correct version of the code:
 ```
