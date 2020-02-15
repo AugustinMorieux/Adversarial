@@ -14,6 +14,13 @@ You can install Git LFS using a package manager:
 * To use Homebrew, run `brew install git-lfs`.
 * To use MacPorts, run `port install git-lfs`.
 
+## Installing Pipenv <https://docs.python-guide.org/dev/virtualenvs/>
+Pipenv is a dependency manager for Python projects. If you’re familiar with Node.js’ npm or Ruby’s bundler, it is similar in spirit to those tools. While pip can install Python packages, Pipenv is recommended as it’s a higher-level tool that simplifies dependency management for common use cases.
+Use pip to install Pipenv:
+```
+pip install --user pipenv
+```
+
 ## Creating a virtual environment
 In creating a virtual environment you will create a directory containing a python3 binary and everything needed to run deepspeech. You can use whatever directory you want. For the purpose of the documentation, we will rely on `$HOME/tmp/deepspeech-train-venv`. You can create it using this command:
 
