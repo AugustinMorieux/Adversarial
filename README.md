@@ -1,7 +1,5 @@
-Projet securité
-
-Commande pip:
-
+# Projet securité
+---
 
 1. Install DeepSpeech
 	- https://github.com/mozilla/DeepSpeech/blob/master/doc/TRAINING.rst
