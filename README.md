@@ -125,6 +125,7 @@ tar xvf audio-0.6.1.tar.gz
 ```
 deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --scorer deepspeech-0.6.1-models/kenlm.scorer --audio audio/2830-3980-0043.wav
 ```
+The `--scorer` argument is optional, and represents an external language model to be used when transcribing the audio.
 ## Check that you can classify normal audio files correctly 
 ```
 python3 classify.py --in sample-000000.wav --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
