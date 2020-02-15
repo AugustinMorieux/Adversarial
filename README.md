@@ -8,7 +8,6 @@
 3. Install Samantha
 
 
-
 ## Install Git Large File Storage 
 You can install Git LFS using a package manager:
 * To use Homebrew, run `brew install git-lfs`.
