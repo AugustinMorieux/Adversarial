@@ -10,11 +10,12 @@ Commande pip:
 2. Install Audio Attack
 3. Install Samantha
 
-^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
 ## Install Git Large File Storage 
->brew install git-lfs
-
+```
+brew install git-lfs
+```
 
 Getting the training code
 Clone the Mozilla DeepSpeech repository into a folder called DeepSpeech:
