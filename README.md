@@ -4,6 +4,7 @@
 1. Install DeepSpeech
 	- https://github.com/mozilla/DeepSpeech/blob/master/doc/TRAINING.rst
 2. Install Audio Attack
+	- https://github.com/carlini/audio_adversarial_examples
 3. Install Samantha
 
 
