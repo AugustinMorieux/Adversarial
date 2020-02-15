@@ -147,3 +147,24 @@ python3 attack.py --in sample-000000.wav --target "this is a test" --out adv.wav
 ```
 python3 classify.py --in adv.wav --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
 ```
+
+
+## Install Microphone VAD Streaming
+Stream from microphone to DeepSpeech, using VAD (voice activity detection). A fairly simple example demonstrating the DeepSpeech streaming API in Python. Also useful for quick, real-time testing of models and decoding parameters.
+
+
+```
+sudo apt install portaudio19-dev python3-dev
+```
+
+Installation on MacOS may fail due to portaudio, use brew to install it:
+
+```
+brew install portaudio
+```
+
+```
+pip install -r requirements.txt
+```
+
+Uses portaudio for microphone access, so on Linux, you may need to install its header files to compile the pyaudio package:
