@@ -168,3 +168,11 @@ pip install -r requirements.txt
 ```
 
 Uses portaudio for microphone access, so on Linux, you may need to install its header files to compile the pyaudio package:
+
+## Additionnal problems:
+
+with numpy, try:
+```
+pip install --upgrade --ignore-installed --install-option '--install-data=/usr/local' numpy
+```
+
