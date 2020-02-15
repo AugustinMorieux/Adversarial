@@ -73,6 +73,7 @@ git checkout tags/v0.4.1
 ```
 > If you get an error with tflite_convert, comment out DeepSpeech.py Line 21
 `# from tensorflow.contrib.lite.python import tflite_convert`
+
 ## Installing Python dependencies
 Install the required dependencies using pip3:
 ```
@@ -133,8 +134,9 @@ tar xvf audio-0.6.1.tar.gz
 deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --scorer deepspeech-0.6.1-models/kenlm.scorer --audio audio/2830-3980-0043.wav
 ```
 
-```
+for having the output in a `.txt`
 
+```
 echo `deepspeech --model deepspeech-0.6.1-models/output_graph.pbmm --audio audio/2830-3980-0043.wav` >> output.txt
 ```
 
