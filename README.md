@@ -79,3 +79,24 @@ If you want to use the pre-trained English model for performing speech-to-text, 
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.4.1/deepspeech-0.4.1-checkpoint.tar.gz
 tar -xzf deepspeech-0.4.1-checkpoint.tar.gz
 ```
+
+## Getting the audio adversarial Attack
+```
+git clone https://github.com/carlini/audio_adversarial_examples.git
+```
+
+
+## Check that you can classify normal audio files correctly 
+```
+python3 classify.py --in sample-000000.wav --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
+```
+
+## Generate adversarial examples 
+```
+python3 attack.py --in sample-000000.wav --target "this is a test" --out adv.wav --iterations 1000 --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
+```
+
+## Verify the attack succeeded 
+```
+python3 classify.py --in adv.wav --restore_path deepspeech-0.4.1-checkpoint/model.v0.4.1
+```
