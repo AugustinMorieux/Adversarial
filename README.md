@@ -87,6 +87,7 @@ You'll also need to install the ds_ctcdecoder Python package. ds_ctcdecoder is r
 ```
 pip3 install $(python3 util/taskcluster.py --decoder)
 ```
+> if it is not working : `python3 util/taskcluster.py --arch osx --target` 
 This command will download and install the ds_ctcdecoder package. You can override the platform with --arch if you want the package for ARM7 (--arch arm) or ARM64 (--arch arm64). If you prefer building the ds_ctcdecoder package from source, see the :github:`native_client README file <native_client/README.rst>`.
 
 ## Recommendations
