@@ -97,7 +97,7 @@ This command will download and install the ds_ctcdecoder package. You can overri
 If you have a capable (NVIDIA, at least 8GB of VRAM) GPU, it is highly recommended to install TensorFlow with GPU support. Training will be significantly faster than using the CPU. To enable GPU support, you can do:
 ```
 pip3 uninstall tensorflow
-pip3 install 'tensorflow-gpu==1.15.0'
+pip3 install tensorflow==1.14 progressbar numpy scipy pandas python_speech_features tables attrdict pyxdg
 ```
 Please ensure you have the required CUDA dependency.
 It has been reported for some people failure at training:
