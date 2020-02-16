@@ -46,6 +46,7 @@ To perform the installation, just use pip3 as such:
 ```
 pip3 install deepspeech
 ```
+> `pip install deepspeech==0.4.1`for do the adversarial attack
 If deepspeech is already installed, you can update it as such:
 ```
 pip3 install --upgrade deepspeech
