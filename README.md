@@ -199,6 +199,9 @@ with progressbar, try:
 pip install progressbar2
 ```
 
+with sox, try:
+```
+pip install sox==1.3.3
 
 
 
