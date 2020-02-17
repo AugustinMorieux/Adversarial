@@ -113,7 +113,10 @@ If you want to use the pre-trained English model for performing speech-to-text, 
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.4.1/deepspeech-0.4.1-checkpoint.tar.gz
 tar -xzf deepspeech-0.4.1-checkpoint.tar.gz
 ```
-
+```
+wget https://github.com/mozilla/DeepSpeech/releases/download/v0.4.1/deepspeech-0.4.1-models.tar.gz
+tar xvfz deepspeech-0.4.1-models.tar.gz
+```
 ```
 wget https://github.com/mozilla/DeepSpeech/releases/download/v0.6.1/deepspeech-0.6.1-models.tar.gz
 tar xvfz deepspeech-0.6.1-models.tar.gz
